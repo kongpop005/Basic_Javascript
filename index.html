@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+      <script>
+              //function declaration
+      function convertToFarenheit(c) {
+        return c * 1.8 + 32;
+      }
+      let c = 27;
+      let farenheit = convertToFarenheit(c);
+      document.write(
+        "1.Expected Output from traditional decalration:" + farenheit
+      );
+
+      //Function Expression
+      let fa = function (c2) {
+        return c2 * 1.8 + 32;
+      };
+      document.write(
+        "<br>2.Expected Output from Function Expression:" + fa(60)
+      );
+      //Arrow Function
+      let c3 = 60;
+      let fa2 = (c3) => {
+        return c3 * 1.8 + 32;
+      };
+      document.write("<br>3. Expected Output from Arrow Function:" + fa2(c3));
+
+      //Arrow Function with one line
+      let c4 = 60;
+      let fa3 = (c4) => c4 * 1.8 + 32;
+      document.write("<br>4.Expected Output from Arrow Function2 :" + fa3(c4));
+      </script>
+</body>
+</html>
